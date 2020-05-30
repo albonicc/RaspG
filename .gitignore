@@ -1,0 +1,5 @@
+/src/gui/node_modules
+/src/gui/package-lock.json
+/src/gui/package.json
+.vscode
+.DS_Store

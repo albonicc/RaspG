@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaspG</title>
+</head>
+<body style = "background-color: rgb(234, 234, 234);">
+    <div class="container p-4">
+        <div id="products">
+                <div class = "col-xs-4 p-2"> 
+                    <div class = "card text-center">
+                        <div class = "card-header" style = "background-color: rgb(112, 188, 201); color: white !important;">
+                            <h5 class = "card-title">RaspG - Sensores</h5>
+                        </div>
+                        <div class = "card-body">
+                            <div id = "temp">
+                            Temperatura: 
+                            <script src = "../linkers/sensors.js">
+                            // function getData(callback){
+                            //     const spawn = require("child_process").spawn;
+
+                            //     const pythonProcess = spawn('python3', ["sensors.py"]);
+                            //     var temp = '';
+
+                            //     pythonProcess.stdout.on('data', (data) => {
+                            //         mystr = data.toString();
+                            //         myjson = JSON.parse(mystr);
+                            //         // console.log(myjson);
+                            //         // console.log(myjson.temp);
+                            //         // console.log(myjson.air_hum); 
+                            //         // console.log(myjson.soil_hum); 
+                            //         // console.log(myjson.lum);
+                            //         alert(temp = myjson.temp);     
+                            //     });
+                            //     pythonProcess.on('close', function(code) {
+                            //         return callback(temp);
+                            //     });
+                            // }
+                            </script>
+                            </div>
+                            <hr/>
+                            Humedad del aire:
+                            <hr/>
+                            Humedad de la tierra:
+                            <hr/>
+                            Luminosidad:
+                        </div>
+                        <div class = "card-footer" style = "background-color: rgb(112, 188, 201); color: white !important;">
+                            <div id = time>
+                                <script>
+                                    var f = new Date();
+                                    document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>  
+</body>
+</html>
