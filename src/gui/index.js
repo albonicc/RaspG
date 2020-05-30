@@ -51,7 +51,7 @@ const templateMenu = [
         submenu:[
             {
                 label: 'New product',
-                accelerator:'Cmd + n',
+                accelerator:'Ctrl + n',
                 click() {
                     createNewProductWindow()
                 }
@@ -62,7 +62,7 @@ const templateMenu = [
             },
             {
                 label: 'Close',
-                accelerator:'Cmd + w',
+                accelerator:'Crl + w',
                 click() {
                     app.quit();
                 }
@@ -74,7 +74,7 @@ const templateMenu = [
         submenu: [
             {
                 label: 'New edit',
-                accelerator: "Cmd + x"
+                accelerator: "Ctrl + x"
             }
         ]
     }
@@ -92,7 +92,7 @@ if(process.env.NODE_ENV !== 'production') {
         submenu: [
             {
                 label: 'Show/Hide DevTools',
-                accelerator: "Cmd + d",
+                accelerator: "Ctrl + d",
                 click(item, focusedWindow) {
                     focusedWindow.toggleDevTools();
                 }
