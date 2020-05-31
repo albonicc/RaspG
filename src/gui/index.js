@@ -52,13 +52,16 @@ const templateMenu = [
             {
                 label: 'New product',
                 accelerator:'Ctrl + n',
+                accelerator:'Cmd + n',
                 click() {
                     createNewProductWindow()
                 }
             },
             {
-                label: 'Remove All Products',
-                accelerator: 'cmd + shift + r'
+                label: 'Copy',
+                accelerator:'Ctrl + c',
+                accelerator: 'Cmd + c',
+                role: 'copy'
             },
             {
                 label: 'Close',
