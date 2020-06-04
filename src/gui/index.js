@@ -66,6 +66,7 @@ const templateMenu = [
             {
                 label: 'Close',
                 accelerator:'Crl + w',
+                accelerator:'Cmd + w',
                 click() {
                     app.quit();
                 }
@@ -77,7 +78,8 @@ const templateMenu = [
         submenu: [
             {
                 label: 'New edit',
-                accelerator: "Ctrl + x"
+                accelerator: "Ctrl + x",
+                accelerator: 'Cmd + x'
             }
         ]
     }

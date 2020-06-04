@@ -24,7 +24,7 @@ function getData(){
                             <hr/>
                             Luminosidad: ${myjson.lum}
                         `
-        sensors.innerHTML += sensorsTemplate;
+        sensors.innerHTML = sensorsTemplate;
 
     })
    
