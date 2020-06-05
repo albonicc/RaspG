@@ -1,6 +1,7 @@
 const { app, BrowserWindow, Menu } = require('electron');
 const url = require('url');
 const path = require('path');
+const wia = require('wia')('d_sk_1v2Z1lGl28e2fGPlTuRwhnEc');
 
 if(process.env.NODE_ENV !== 'production'){
     require('electron-reload')(__dirname, {
