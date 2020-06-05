@@ -59,8 +59,6 @@ const templateMenu = [
             },
             {
                 label: 'Copy',
-                accelerator:'Ctrl + c',
-                accelerator: 'Cmd + c',
                 role: 'copy'
             },
             {
